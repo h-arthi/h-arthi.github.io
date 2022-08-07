@@ -1,0 +1,297 @@
+@font-face {
+    src: url(Fonts/Mukta-Regular.ttf);
+    font-family: mukta;
+}
+@font-face {
+    src: url(Fonts/Mukta-SemiBold.ttf);
+    font-family: muktaBold;
+    font-weight: heavy;
+}
+@font-face {
+    src: url(Fonts/Quicksand-VariableFont_wght.ttf);
+    font-family: quicksand;   
+}
+@font-face {
+    src: url(Fonts/ComforterBrush-Regular.ttf);
+    font-family: brush; 
+    font-weight: heavy;  
+}
+@font-face {
+    src: url(Fonts/Merriweather-Black.ttf);
+    font-family: Mb; 
+    font-weight: heavy;  
+}
+@font-face {
+    src: url(Fonts/Merriweather-BlackItalic.ttf);
+    font-family: MbI; 
+    font-weight: heavy;  
+}
+@font-face {
+    src: url(Fonts/Merriweather-Bold.ttf);
+    font-family: MbB; 
+    font-weight: heavy;  
+}
+@font-face {
+    src: url(Fonts/Merriweather-BoldItalic.ttf);
+    font-family: MbBI; 
+    font-weight: heavy;  
+}
+@font-face {
+    src: url(Fonts/Merriweather-Italic.ttf);
+    font-family: MI; 
+    font-weight: heavy;  
+}
+@font-face {
+    src: url(Fonts/Merriweather-Regular.ttf);
+    font-family: Merriweather; 
+    font-weight: heavy;  
+}
+*{
+    box-sizing: border-box;
+    font-family: quicksand;
+}
+
+html,body{
+    /* background-color: rgb(241, 212, 217); */
+    background-image: url(Images/Untitled-design.png);
+    margin: 0;
+    padding: 0;
+}
+.nav ul{
+    margin: 0;
+}
+.nav li{
+    font-family:mukta;
+    display: inline;
+    font-weight: bold;
+}
+.nav a{
+    display: inline-block;
+    padding: .5em;
+    color: darkslategrey;
+    text-decoration: none;
+}
+.nav a:hover{
+    background-color: snow;
+}
+.main-nav{
+    text-align: right;
+    font-size: larger;
+    font-weight: bold;
+    font-family: muktaBold;
+}
+.main-nav li{
+    padding: 0 1%;
+}
+.main-header{
+    background-image: url(Images/header2.png);
+    background-blend-mode: saturation;
+    background-size: cover;
+    padding-bottom: 50px;
+}
+.background-img{
+    background-image: url(Images/header3.jpg);
+}
+.title-page{
+    text-align: center;
+    font-size: 4em;
+    font-family: muktaBold;
+    color: darkslategrey;
+}
+.subtitle{
+    text-align: center;
+    font-size: 3em;
+    font-family: mukta;
+    color: darkslategrey;
+}
+.content-section{
+    margin: 1cm;
+}
+.container{/*this class is to ensure the button stays in the right frame throughout*/
+    margin: 0 auto;
+    padding: 0, 0;
+    text-align: justify;
+    font-size: 1.25em;
+    display: flex;
+}
+
+.pfp-image{
+    display:block;
+    margin: 0 auto;
+    width:100%;
+    height:100%;
+    border-radius: 50%;
+    border-width: 30px;
+    border: 5px solid darkslategrey;    
+}
+.quote{
+    display:flex;
+    margin: 0 auto;
+    max-height: 100px;
+    max-width: 505px;
+    text-align:justify;
+    font-family: mukta;
+    font-size: 2.1em;
+    color: maroon;
+}
+.credit{
+    text-align: center;
+    margin: 0 0;
+    font-size:1em;
+}
+.main-footer{
+    background-color:bisque;
+    color: white;
+    padding: .25em .25em;
+}
+.main-footer-container{
+    display: flex;
+    align-items: center;
+}
+.main-footer-container ul{
+    flex-grow: 1;
+    text-align: center;
+}
+.footer-nav img{
+    width: 44px;
+    height: 44px;
+}
+.header{
+    background-image: url(Images/header3.jpg);
+    background-blend-mode: saturation;
+    background-size: cover;
+    padding-bottom: 50px;
+}
+.bttn{
+    color: maroon;
+    vertical-align: middle;
+    cursor: pointer;
+    font-family: mukta;
+    font-size: 1em;
+    background-color: rgb(241, 212, 217) ;
+    border-radius:30px; 
+    border-color: transparent;
+    max-width:60%;
+    transition: .4s;
+    padding: 9px 22px;
+}
+.bttn:hover{
+    background-color:blanchedalmond;
+}
+
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    height: 300px;
+    width: 335px;
+    padding: 20px 20px;
+    background: rgba(177, 61, 61, 0.568);
+    border-radius: 10%;
+    margin: 15px;
+    position: relative;
+    overflow: hidden;
+    text-align: justify;
+}
+.card-title{
+    font-family: muktaBold;
+    font-weight:bold;
+    font-size: 25px;
+    text-align: center;
+    color:blanchedalmond;
+}
+.card-content{
+    color: blanchedalmond;
+    font-weight: 1px;
+    font-family:Merriweather;
+}
+.shrink{
+    transition: .7s ease;
+}
+.shrink:hover{
+    transform: scale(0.8);
+    -webkit-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+}
+.grow{
+    transition: .7s ease;
+}
+.grow:hover{
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+}
+.main-project-pic{
+    margin: 2cm auto;
+    display: block;
+    height: 350px;
+    width: auto;
+    border-radius:5%;
+    border: 5px solid darkslategrey;
+    
+}
+.project-headings h2{
+    font-size: 1.5em;
+    font-family: MB;
+    color: maroon;
+    display: center flex;
+    padding: 3px;
+    text-align: center;
+    background-color: blanchedalmond;
+}
+.project-headings ul{
+    display: flex inline;
+}
+.project-headings li{
+    color: darkslategrey;
+    font-size: 1em;
+    text-align: justify;
+    font-family: MI;
+}
+.parent{
+    text-align: center;
+}
+.child{
+    display: inline-block;
+    vertical-align: middle;
+    margin: 2.5em 5em;
+}
+.project-headers{
+    text-align: center;
+    font-family: MBI;
+    color: darkslategrey;
+    background-color: rgb(213,220,220);
+    margin: 0 22em;
+}
+.justify-center-text{
+    text-align:justify;
+    padding: 1em 8em;
+    font-size: 1.1em;
+    color: darkslategrey;
+    font-family: Merriweather;
+}
+.caption{
+    font-family: mukta;
+    font-size: large;
+    color: darkslategrey;
+}
+.img-collection{
+    background-color:antiquewhite;
+    margin: 0;
+}
+.project-pic-left-align{
+    height: 350px;
+    width: 450px;
+    float: left; 
+    margin: auto 5px;
+    border: 3px solid black;
+}
+.project-pic-right-align{
+    height: 350px;
+    width: 450px;
+    float: right; 
+    margin: auto 5px;
+    border: 3px solid black; 
+}

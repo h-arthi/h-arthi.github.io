@@ -1,0 +1,7 @@
+//these lines help to keep the image centered, make sure display is block and left-right marggin is auto
+margin: 2cm auto;
+display: block;
+//to make image align left or right, in css use:
+float: left; margin: auto 5px;
+OR
+float: right; margin: auto 5px;

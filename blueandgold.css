@@ -1,0 +1,121 @@
+@font-face {
+    src: url(Fonts/Mukta-Regular.ttf);
+    font-family: mukta;
+}
+@font-face {
+    src: url(Fonts/Mukta-SemiBold.ttf);
+    font-family: muktaBold;
+    font-weight: heavy;
+}
+@font-face {
+    src: url(Fonts/Quicksand-VariableFont_wght.ttf);
+    font-family: quicksand;   
+}
+@font-face {
+    src: url(Fonts/ComforterBrush-Regular.ttf);
+    font-family: brush; 
+    font-weight: heavy;  
+}
+*{
+    box-sizing: border-box;
+    font-family: quicksand;
+    color: goldenrod;
+}
+
+html,body{
+    background-color:#0b1d3b;
+    margin: 0;
+    padding: 0;
+}
+.nav ul{
+    margin: 0;
+}
+.nav li{
+    display: inline;
+    font-family: mukta;
+}
+.nav a{
+    display: inline-block;
+    padding: .5em;
+    color:lightgoldenrodyellow;
+    text-decoration: none;
+}
+.nav a:hover{
+    background-color: darkslategrey;
+}
+.main-nav{
+    font-family: muktaBold;
+    text-align: right;
+    font-size: larger;
+    font-weight: bold;
+}
+.main-nav li{
+    padding: 0 1%;
+}
+.main-header{
+    background-image: url(Images/header3.jpg);
+    background-blend-mode: saturation;
+    background-size: cover;
+    padding-bottom: 50px;
+}
+.title-page{
+    text-align: center;
+    font-size: 4em;
+    font-family: muktaBold;
+    color: goldenrod;
+}
+.subtitle{
+    text-align: center;
+    font-size: 3em;
+    font-family: mukta;
+    color: goldenrod;
+}
+.content-section{
+    margin: 1cm;
+}
+.container{
+    max-width: 900px;
+    width:700px;
+    margin: 0 auto;
+    padding: 0, 0;
+    text-align: justify;
+    font-size: 1.25em;
+}
+.pfp-image{
+    display: block;
+    margin: 0 auto;
+    width:100%;
+    height:100%;
+    border-radius: 50%;
+}
+.quote{
+    display:block;
+    margin: 0 auto;
+    max-height: 100px;
+    max-width: 505px;
+    text-align:justify;
+    font-family: mukta;
+}
+.credit{
+    text-align: right;
+    margin: 0 auto;
+    max-height: 100px;
+    max-width: 100px;
+}
+.main-footer{
+    background-color: goldenrod;
+    color: white;
+    padding: .25em .25em;
+}
+.main-footer-container{
+    display: flex;
+    align-items: center;
+}
+.main-footer-container ul{
+    flex-grow: 1;
+    text-align: center;
+}
+.footer-nav img{
+    width: 44px;
+    height: 44px;
+}

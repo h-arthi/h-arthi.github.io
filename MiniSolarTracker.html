@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MINI SOLAR TRACKER</title>
+    <link rel="stylesheet" href="pinkandgreen.css" />
+</head>
+
+<body>
+    <header class="main-header">
+        <nav class="nav main-nav">
+            <ul>
+                <li><a href="about.html">HOME</a></li>
+                <li><a href="index.html">PROJECTS</a></li>
+            </ul>
+        </nav>
+        <h1 class="title-page">MINI SOLAR TRACKER</h1>
+    </header>
+
+    <body>
+
+        <section class="content-section">
+            <div>
+                <img class="main-project-pic" src="Images/minisolarTracker.jpg">
+            </div>
+
+            <h1 class=" grow project-headers">PROJECT OVERVIEW</h1>
+            <div class="box">
+                <p class="justify-center-text">
+                    During my summer break, I wanted to take on a simple project
+                    relating to solar energy but using components I was already familiar with.
+                    I got inspired by one of my seniors FYP which was a solar tracker tracking
+                    the position of the Sun in real-time using data from the web. From that,
+                    I decided to build a mini solar tracker however not on the same scale.
+                    This project I had taken on would be able to track the position of the Sun
+                    over the day using light dependent resistors. This mini solar tracker could be used to
+                    power a 5 Volt device via solar power as it will be charged up with solar energy throughout the day.
+                </p>
+            </div>
+            <div class="parent">
+                <!--COMPONENTS USED-->
+                <div class="child project-headings">
+                    <h2 class="grow">COMPONENTS USED</h2>
+                    <ul>
+                        <li> Arduino UNO</li>
+                        <li> Servo Motor</li>
+                        <li> Light Dependent Resistors</li>
+                        <li> 20 kilo Ohm Resistors </li>
+                        <li> 5V 60mA Solar Panel</li>
+                    </ul>
+                </div>
+                <!--SOFTWARE-->
+                <div class="child project-headings">
+                    <h2 class="grow">SOFTWARE USED</h2>
+                    <ul>
+                        <li>Arduino IDE</li>
+                    </ul>
+                </div>
+            </div>
+            <h1 class=" grow project-headers">PROCESS</h1><br><br>
+            <div class="box">
+                <p class="justify-center-text">
+                    To begin the project, I first ran a simulation on Tinkercad.
+                    After connecting the circuit with all its components, I had to
+                    test the code for it. This took several tries as running the
+                    simulation without the solar panel as reference proved to be
+                    confusing in trying to determine which way the servo motor was turning.
+                    The tinkercad simulation circuit is as shown on the right.
+                </p>
+                <img class="project-pic-right-align" src="Images/setup.png">
+            </div>
+            <div class="box">
+                <img class="project-pic-left-align" src="Images/minsolarTracker1.jpg">
+                <p class="justify-center-text">
+                    Upon the successful circuit simulation, I had to setup a stand to prop my tracker.
+                    For this, I cut up a polystrene board and glued the pieces together to create a small
+                    stand as shown in the main image above. Aside from having to put together the stand,
+                    I had to also solder the voltage divider circuit for the light dependent resistors.
+                    After completing both of that, I could put together the final version of my mini solar tracker
+                    which used a powerbank to power up the Arduino Uno. The final product is as shown on the left.
+                </p>
+            </div>
+            <br><br>
+            <!--TO START A NEW SECTION FOR IMAGES-->
+            <div class="img-collection">
+                <br><br>
+                <h1 class="shrink project-headers">VIDEO</h1>
+                <div>
+                    <video style="width: 450px; height: 400px; margin: 0 auto; display: block;" controls>
+                        <source src="Images/demo1.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <br>
+            </div>
+        </section>
+
+
+        <footer class="main-footer">
+            <div class="container main-footer-container">
+                <ul class="nav footer-nav">
+                    <li>
+                        <a href="https://www.linkedin.com/in/harthiganesh/" target="_blank">
+                            <img src="Images/Linkedin.png">
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://github.com/h-arthi" target="_blank">
+                            <img src="Images/github.png">
+                        </a>
+                    </li>
+                    <li>
+                        <a href=mailto:"harthi.ganesh@live.com" target="_blank">
+                            <img src="Images/mail.png">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+    </body>
+
+</html>

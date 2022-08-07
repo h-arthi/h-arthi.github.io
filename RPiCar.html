@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2WD IMAGE PROCESSING CAR</title>
+    <link rel="stylesheet" href="pinkandgreen.css" />
+</head>
+
+<body>
+    <header class="main-header">
+        <nav class="nav main-nav">
+            <ul>
+                <li><a href="about.html">HOME</a></li>
+                <li><a href="index.html">PROJECTS</a></li>
+            </ul>
+        </nav>
+        <h1 class="title-page">IMAGE PROCESSING CAR</h1>
+    </header>
+</body>
+
+<body>
+
+    <section class="content-section">
+        <div>
+            <img class="main-project-pic" src="Images/trixie1.jpg">
+        </div>
+        <!--LIST DOWN THE OBJECTIVES AND COMPONENTS AND SOFTWARE-->
+        <div class="parent">
+            <!--OBJECTIVES-->
+            <div class="child project-headings">
+                <h2 class="grow">PROJECT OBJECTIVES</h2>
+                <ul>
+                    <li>Create a Control system for the car</li>
+                    <li>Make the car follow a black line track</li>
+                    <li>Make the car count and detect multiple shapes</li>
+                    <li>Make the car detect multiple colours</li>
+                </ul>
+            </div>
+            <!--COMPONENTS-->
+            <div class="child project-headings">
+                <h2 class="grow">COMPONENTS USED</h2>
+                <ul>
+                    <li> Raspberry Pi 3b+</li>
+                    <li> Pi Camera</li>
+                    <li> L289N Motor Driver</li>
+                    <li> DC Motors</li>
+                    <li> 2WD Car Chassis</li>
+                </ul>
+            </div>
+            <!--SOFTWARE-->
+            <div class="child project-headings">
+                <h2 class="grow">SOFTWARE USED</h2>
+                <ul>
+                    <li> Thonny IDE</li>
+                    <li> OpenCV</li>
+                </ul>
+            </div>
+        </div>
+        <!--PROJECT OVERVIEW-->
+        <h1 class=" grow project-headers">PROJECT OVERVIEW</h1>
+        <div class="box">
+            <img class="project-pic-left-align" src="Images/trixiefirststage.jpg">
+            <p class="justify-center-text">
+                This project was carried out over the duration of three weeks and was expected to achieve the set
+                objectives.
+                The initial setup of the car is displayed on the left. At this stage, a control system for the car was
+                successfully
+                created where it could move forward, backward, turn right and left, and change its speed. When the user
+                inputs a command,
+                one of two actions is taken. Either to change the motor output—enabling the car to move forward,
+                backward, right, left—or
+                to change the speed of the car.
+            </p>
+        </div>
+        <!--CONTINUATION OF PROJECT OVERVIEW-->
+        <div class="box">
+            <p class="justify-center-text">
+                The final car was set up as shown on the right. A Pi Camera was mounted on the car and used for the
+                image processing element
+                throughout the project. Using Open CV, the car was capable of line following (both black and coloured
+                lines) and shape recognition.
+                To enable the car to follow the given track smoothly a PID controller was used, focusing on only the
+                proportional and derivative constants.
+            </p>
+            <img class="project-pic-right-align" src="Images/trixie2.jpg">
+        </div>
+        <!--CHALLENGES FACED THROUGHOUT THE PROJECT-->
+        <h1 class="grow project-headers">CHALLENGES</h1>
+        <div class="box">
+            <p class="justify-center-text">
+                While carrying out this project, some of the challenges I encountered were during the initial
+                set-up process where I was having issues with the GPIO pins on the Raspberry Pi. I had been
+                uploading my program to the car without using the 'GPIO.cleanup()' function. This led to
+                my car not following the control system I had wanted it to as it caused the wheels to spin
+                uncontrollably.
+                However, after much guidance, I managed to solve this issue.
+                <br><br>
+                Another challenge I faced was during the tuning of the PID controller. It wasn't so much of a
+                challenge
+                but, more a timely task to carry out as it took a lot of trials and error to correctly set it.
+            </p>
+        </div>
+        <!--OBJECTIVES ACHIEVED BY THE END OF THE PROJECT-->
+        <h1 class="grow project-headers">ACHIEVED OBJECTIVES AND CAR FUNCTIONALITY</h1>
+        <div class="box">
+            <p class="justify-center-text">
+                By the end of the three weeks, almost all objectives set at the start of the project were completed.
+                These objectives
+                include creating a control system for the car where the user could either control the direction or
+                speed, a car that could
+                detect and count the number of shapes present in an image, and car which could detect, follow and
+                complete a line track
+                (both black and coloured lines) using a PID controller. Images taken throughout the project are shown
+                below.
+            </p>
+        </div>
+        <!--TO START A NEW SECTION FOR IMAGES-->
+        <div class="img-collection">
+            <br><br>
+            <h1 class="shrink project-headers">IMAGES</h1>
+            <br><br>
+            <div class="parent">
+                <div class="child">
+                    <img style="height: 300px; width: 400px; border: 3px solid black;" src="Images/Track2.jpg">
+                    <figcaption class="caption">Given Track</figcaption>
+                </div>
+                <div class="child">
+                    <img style="height:300px; width: 400px;border: 3px solid black;" src="Images/shapedetect.png">
+                    <figcaption class="caption">Shapes Detected</figcaption>
+                </div>
+                <div class="child">
+                    <img style="height: 100px; width: 100px; border: 3px solid black;" src="Images/reddetect.png">
+                    <figcaption class="caption">Red Colour Detection</figcaption>
+                </div>
+                <div class="child">
+                    <img style="height: 100px; width: 100px; border: 3px solid black;" src="Images/greendetect.png">
+                    <figcaption class="caption">Green Colour Detection</figcaption>
+                </div>
+                <div class="child">
+                    <img style="height: 100px; width: 100px; border: 3px solid black;" src="Images/bluedetect.png">
+                    <figcaption class="caption">Blue Colour Detection</figcaption>
+                </div>
+                <p class="justify-center-text">
+                    Codes used can be found <a style ="font-size: 1.1em;color:darkslategrey;font-family: Merriweather;" 
+                    href="https://github.com/h-arthi/EEEE1027/tree/main/Spring" target="_blank">here</a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="main-footer">
+        <div class="container main-footer-container">
+            <ul class="nav footer-nav">
+                <li>
+                    <a href="https://www.linkedin.com/in/harthiganesh/" target="_blank">
+                        <img src="Images/Linkedin.png">
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://github.com/h-arthi" target="_blank">
+                        <img src="Images/github.png">
+                    </a>
+                </li>
+                <li>
+                    <a href=mailto:"harthi.ganesh@live.com" target="_blank">
+                        <img src="Images/mail.png">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>
