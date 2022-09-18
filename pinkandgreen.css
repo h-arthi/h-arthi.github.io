@@ -105,16 +105,21 @@ html,body{
     color: darkslategrey;
 }
 .content-section{
-    margin: 1cm;
+    margin: 1em;
 }
 .container{/*this class is to ensure the button stays in the right frame throughout*/
+    max-width: 900px;
     margin: 0 auto;
-    padding: 0, 0;
-    text-align: justify;
-    font-size: 1.25em;
-    display: flex;
+    padding: 0 1.5em;
 }
-
+.container2{/*this class is to ensure the button stays in the right frame throughout*/
+    max-width: 100%;
+    min-height: 100vh;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+    overflow: hidden; 
+}
 .pfp-image{
     display:block;
     margin: 0 auto;
@@ -181,6 +186,12 @@ html,body{
 
 .box{
     display: flex;
+    flex-wrap: wrap;/*This allows the content to be wrapped if there's not enough space*/
+    justify-content: center;
+    align-items: center;
+}
+.box2{
+    display: flex;
     justify-content: center;
     align-items: center;
 }
@@ -236,7 +247,7 @@ html,body{
     font-size: 1.5em;
     font-family: MB;
     color: maroon;
-    display: center flex;
+    display:flex;
     padding: 3px;
     text-align: center;
     background-color: blanchedalmond;
@@ -283,7 +294,7 @@ html,body{
 }
 .project-pic-left-align{
     height: 350px;
-    width: 450px;
+    width: 350px;
     float: left; 
     margin: auto 5px;
     border: 3px solid black;
@@ -295,3 +306,4 @@ html,body{
     margin: auto 5px;
     border: 3px solid black; 
 }
+
