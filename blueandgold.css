@@ -16,14 +16,44 @@
     font-family: brush; 
     font-weight: heavy;  
 }
+@font-face {
+    src: url(Fonts/Merriweather-Black.ttf);
+    font-family: Mb; 
+    font-weight: heavy;  
+}
+@font-face {
+    src: url(Fonts/Merriweather-BlackItalic.ttf);
+    font-family: MbI; 
+    font-weight: heavy;  
+}
+@font-face {
+    src: url(Fonts/Merriweather-Bold.ttf);
+    font-family: MbB; 
+    font-weight: heavy;  
+}
+@font-face {
+    src: url(Fonts/Merriweather-BoldItalic.ttf);
+    font-family: MbBI; 
+    font-weight: heavy;  
+}
+@font-face {
+    src: url(Fonts/Merriweather-Italic.ttf);
+    font-family: MI; 
+    font-weight: heavy;  
+}
+@font-face {
+    src: url(Fonts/Merriweather-Regular.ttf);
+    font-family: Merriweather; 
+    font-weight: heavy;  
+}
 *{
     box-sizing: border-box;
     font-family: quicksand;
-    color: goldenrod;
 }
 
 html,body{
-    background-color:#0b1d3b;
+    background-color: #0b1d3b; 
+    /*background-image: url(Images/header3.jpg);*/
     margin: 0;
     padding: 0;
 }
@@ -31,8 +61,9 @@ html,body{
     margin: 0;
 }
 .nav li{
+    font-family:mukta;
     display: inline;
-    font-family: mukta;
+    font-weight: bold;
 }
 .nav a{
     display: inline-block;
@@ -41,13 +72,13 @@ html,body{
     text-decoration: none;
 }
 .nav a:hover{
-    background-color: darkslategrey;
+    background-color: #0b1d3b;
 }
 .main-nav{
-    font-family: muktaBold;
     text-align: right;
     font-size: larger;
     font-weight: bold;
+    font-family: muktaBold;
 }
 .main-nav li{
     padding: 0 1%;
@@ -57,6 +88,9 @@ html,body{
     background-blend-mode: saturation;
     background-size: cover;
     padding-bottom: 50px;
+}
+.background-img{
+    background-image: url(Images/header3.jpg);
 }
 .title-page{
     text-align: center;
@@ -71,39 +105,49 @@ html,body{
     color: goldenrod;
 }
 .content-section{
-    margin: 1cm;
+    margin: 1em;
 }
-.container{
+.container{/*this class is to ensure the button stays in the right frame throughout*/
     max-width: 900px;
-    width:700px;
     margin: 0 auto;
-    padding: 0, 0;
-    text-align: justify;
-    font-size: 1.25em;
+    padding: 0 1.5em;
+}
+.container2{/*this class is to ensure the button stays in the right frame throughout*/
+    max-width: 100%;
+    min-height: 100vh;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+    overflow: hidden; 
+    color: goldenrod;
 }
 .pfp-image{
-    display: block;
+    display:block;
     margin: 0 auto;
     width:100%;
     height:100%;
     border-radius: 50%;
+    border-width: 30px;
+    border: 5px solid goldenrod;    
 }
 .quote{
-    display:block;
+    display:flex;
     margin: 0 auto;
     max-height: 100px;
     max-width: 505px;
     text-align:justify;
-    font-family: mukta;
+    font-family: MbI;
+    font-size: 2.1em;
+    color:  goldenrod;
 }
 .credit{
-    text-align: right;
-    margin: 0 auto;
-    max-height: 100px;
-    max-width: 100px;
+    text-align: center;
+    margin: 0 0;
+    font-size:1em;
+    color:  bisque;
 }
 .main-footer{
-    background-color: goldenrod;
+    background-color:bisque;
     color: white;
     padding: .25em .25em;
 }
@@ -119,3 +163,149 @@ html,body{
     width: 44px;
     height: 44px;
 }
+.header{
+    background-image: url(Images/header3.jpg);
+    background-blend-mode: saturation;
+    background-size: cover;
+    padding-bottom: 50px;
+}
+.bttn{
+    color: maroon;
+    vertical-align: middle;
+    cursor: pointer;
+    font-family: mukta;
+    font-size: 1em;
+    background-color: rgb(241, 212, 217) ;
+    border-radius:30px; 
+    border-color: transparent;
+    max-width:60%;
+    transition: .4s;
+    padding: 9px 22px;
+}
+.bttn:hover{
+    background-color:blanchedalmond;
+}
+
+.box{
+    display: flex;
+    flex-wrap: wrap;/*This allows the content to be wrapped if there's not enough space*/
+    justify-content: center;
+    align-items: center;
+}
+.box2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    height: 300px;
+    width: 335px;
+    padding: 20px 20px;
+    background: #6699CC;
+    border-radius: 10%;
+    margin: 15px;
+    position: relative;
+    overflow: hidden;
+    text-align: justify;
+}
+.card-title{
+    font-family: muktaBold;
+    font-weight:bold;
+    font-size: 25px;
+    text-align: center;
+    color: #FFD1DC;
+}
+.card-content{
+    color: blanchedalmond;
+    font-weight: 5px;
+    font-family:Quicksand;
+}
+.shrink{
+    transition: .7s ease;
+}
+.shrink:hover{
+    transform: scale(0.8);
+    -webkit-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+}
+.grow{
+    transition: .7s ease;
+}
+.grow:hover{
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+}
+.main-project-pic{
+    margin: 2cm auto;
+    display: block;
+    height: 350px;
+    width: auto;
+    border-radius:5%;
+    border: 5px solid goldenrod;
+    
+}
+.project-headings h2{
+    font-size: 1.5em;
+    font-family: muktaBold;
+    color: goldenrod;
+    display:flex;
+    padding: 3px;
+    text-align: center;
+    /*background-color: blanchedalmond;*/
+}
+.project-headings ul{
+    display: flex inline;
+}
+.project-headings li{
+    color:  #FFD1DC;
+    font-size: 1em;
+    text-align: justify;
+    font-family: Quicksand;
+}
+.parent{
+    text-align: center;
+}
+.child{
+    display: inline-block;
+    vertical-align: middle;
+    margin: 2.5em 5em;
+}
+.project-headers{
+    text-align: center;
+    font-family: muktaBold;
+    color: goldenrod;
+    /*background-color: rgb(213,220,220);*/
+    margin: 0 22em;
+}
+.justify-center-text{
+    text-align:justify;
+    padding: 1em 8em;
+    font-size: 1.1em;
+    color: #FFD1DC;
+    font-family: quicksand;
+}
+.caption{
+    font-family: mukta;
+    font-size: large;
+    color:goldenrod;
+}
+.img-collection{
+    /*background-color:#6699CC;*/
+    margin: 0;
+}
+.project-pic-left-align{
+    height: 350px;
+    width: 350px;
+    float: left; 
+    margin: auto 5px;
+    border: 3px solid black;
+}
+.project-pic-right-align{
+    height: 350px;
+    width: 450px;
+    float: right; 
+    margin: auto 5px;
+    border: 3px solid black; 
+}
+
