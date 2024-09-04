@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>PROTOTYPE DOPPLER SPEED RADAR</title>
+        <link rel="stylesheet" href="blueandgold.css"/>
+    </head>
+    <body>
+        <header class="main-header">
+            <nav class="nav main-nav">
+                <ul>
+                    <li><a href = "index.html">HOME</a></li>
+                    <li><a href = "projects.html">PROJECTS</a></li>
+                </ul>
+            </nav>
+            <h1 class="title-page" ><!--ENTER YOUR TITLE HERE--></h1>
+        </header>
+    <body>
+
+        {% block body %}
+        <body>
+            <section class="content-section container2">
+                <div>
+                    <img class="main-project-pic" src="Images/Jeff.jpeg">
+                </div>
+                <!--TO ALIGN THE OBJECTIVES AND COMPONENTS IN THE CENTER-->
+                <div class="parent">
+
+                    <!--overview-->
+                    <div class="text-box project-headings child">
+                        <h2>OVERVIEW</h2>
+                        <p class="justify-center-text">
+                            The objective of this project was to develop a functional prototype speed detector utilizing HB100 Doppler Radar technology. 
+
+                            By leveraging the Doppler effect, this radar device measures the velocity of moving objects by analyzing the frequency shift 
+                            
+                            between emitted and reflected signals. 
+                            
+                            This prototype was designed with the aim to accurately calculate the speed of objects based on the measured frequency variations,
+
+                            and was a collaboration between two other students and myself.</p>
+                    </div>
+
+                    <!--Objectives-->
+                    <div class="text-box project-headings child">
+                        <h2>PROJECT OBJECTIVES</h2>
+                        <p class="justify-center-text">
+                            Based on the overiview above, the prject was divided into several objectives as follows:
+                            <ul>
+                                <li>
+                                    Design, simulate, and build two analogue signal conditioning circuits 
+                                    (bandpass filter + amplifier) for both the ADC system and comparator system
+                                </li>
+                                <li>
+                                    Implement data acquisition and signal processing using the STM32 microcontroller
+                                     along with an LCD/button user interface to view the frequency/speed and switch between different calculated units
+                                </li>
+                                <li>
+                                    Implement a complete working prototype for both systems with the final circuit 
+                                    soldered onto a printed circuit board (PCB)
+                                </li>
+                                <li>
+                                    Build RS-485 serial transceiver daughter board to transmit and
+                                    receive a UART signal containing the speed of the moving 
+                                    object (encoded in binary coded decimal)
+                                </li>
+                                <li>
+                                    Design and build the required power supplies for the display 
+                                    board using the MAX-882 integrated circuit
+                                </li>
+                                <li>
+                                    CPLD Sofware design and implementation of clock divder, BCD to 7segment decoder, shift register, UART control receiver logic
+                                </li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+
+                <!--Images-->
+                <div class="image-box project-headings">
+                    <h2>IMAGES</h2>
+                </div>
+
+            </section>
+        </body>
+        {% endblock %}
+
+
+        <footer class="main-footer">
+            <div class="container main-footer-container">
+                <ul class="nav footer-nav">
+                    <li>
+                        <a 
+                        href = "https://www.linkedin.com/in/harthiganesh/" target="_blank">
+                        <img src="Images/Linkedin.png">
+                        </a>
+                    </li>
+                        
+                    <li>
+                        <a
+                        href = "https://github.com/h-arthi" target="_blank">
+                        <img src="Images/github.png">
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                        href= mailto:"harthi.ganesh@live.com" target="_blank">
+                        <img src="Images/mail.png">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+    </body>
+</html>

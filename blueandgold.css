@@ -148,7 +148,7 @@ html,body{
 }
 .main-footer{
     background-color:bisque;
-    color: white;
+    /*color: white;*/
     padding: .25em .25em;
 }
 .main-footer-container{
@@ -163,6 +163,10 @@ html,body{
     width: 44px;
     height: 44px;
 }
+.footer-nav a:hover{
+    background-color: #6699CC;
+}
+
 .header{
     background-image: url(Images/header3.jpg);
     background-blend-mode: saturation;
@@ -228,6 +232,7 @@ html,body{
     -webkit-transform: scale(0.8);
     -ms-transform: scale(0.8);
 }
+
 .grow{
     transition: .7s ease;
 }
@@ -243,24 +248,21 @@ html,body{
     width: auto;
     border-radius:5%;
     border: 5px solid goldenrod;
-    
 }
 .project-headings h2{
-    font-size: 1.5em;
+    font-size: 4.5 em;
     font-family: muktaBold;
     color: goldenrod;
     display:flex;
-    padding: 3px;
     text-align: center;
     /*background-color: blanchedalmond;*/
 }
-.project-headings ul{
-    display: flex inline;
-}
+
+
 .project-headings li{
     color:  #FFD1DC;
-    font-size: 1em;
-    text-align: justify;
+    font-size: 1.1em;
+    text-align: left;
     font-family: Quicksand;
 }
 .parent{
@@ -271,6 +273,17 @@ html,body{
     vertical-align: middle;
     margin: 2.5em 5em;
 }
+
+.text-box{
+    margin-left: 3.5cm;
+    margin-right: 3.5cm;
+}
+
+.image-box{
+    margin-left: 3.5cm;
+    margin-right: 2cm ;
+}
+
 .project-headers{
     text-align: center;
     font-family: muktaBold;
@@ -280,7 +293,6 @@ html,body{
 }
 .justify-center-text{
     text-align:justify;
-    padding: 1em 8em;
     font-size: 1.1em;
     color: #FFD1DC;
     font-family: quicksand;
