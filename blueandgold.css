@@ -89,6 +89,12 @@ html,body{
     background-size: cover;
     padding-bottom: 50px;
 }
+.projects-header{
+    background-image: url(Images/blurred\ header.jpg);
+    background-blend-mode:hard-light;
+    background-size: cover;
+    padding-bottom: 50px;
+}
 .background-img{
     background-image: url(Images/header3.jpg);
 }
@@ -244,13 +250,13 @@ html,body{
 .main-project-pic{
     margin: 2cm auto;
     display: block;
-    height: 350px;
-    width: auto;
-    border-radius:5%;
-    border: 5px solid goldenrod;
+    height: auto;
+    width: 15cm;
+    border-radius:1%;
+    border: 3px solid #6699CC;
 }
 .project-headings h2{
-    font-size: 4.5 em;
+    font-size: xx-large;
     font-family: muktaBold;
     color: goldenrod;
     display:flex;
@@ -299,8 +305,9 @@ html,body{
 }
 .caption{
     font-family: mukta;
+    justify-content: left;
     font-size: large;
-    color:goldenrod;
+    color: #FFD1DC;
 }
 .img-collection{
     /*background-color:#6699CC;*/
@@ -321,3 +328,15 @@ html,body{
     border: 3px solid black; 
 }
 
+.figure{
+    display: block;
+    margin: 50px;
+    padding: 5px;
+}
+
+.figcaption{
+    font-family: mukta;
+    text-align: center;
+    font-size: large;
+    color: #FFD1DC;
+}
