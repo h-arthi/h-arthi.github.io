@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SMPS</title>
+        <link rel="stylesheet" href="blueandgold.css"/>
+    </head>
+    <body>
+        <header class="projects-header">
+            <nav class="nav main-nav">
+                <ul>
+                    <li><a href = "index.html">HOME</a></li>
+                    <li><a href = "projects.html">PROJECTS</a></li>
+                </ul>
+            </nav>
+            <h1 class="title-page">TWO SWITCH FORWARD CONVERTER</h1>
+        </header>
+    <body>
+
+        {% block body %}
+        <body>
+            <section class="content-section container2">
+                <div>
+                    <img class="main-project-pic" src="Year 2 Group Project/ClosedLoopConfigurationofCircuit.jpg">
+                </div>
+                <!--TO ALIGN THE OBJECTIVES AND COMPONENTS IN THE CENTER-->
+                <div class="parent">
+
+                    <!--overview-->
+                    <div class="text-box project-headings child">
+                        <h2>OVERVIEW</h2>
+                        <p class="justify-center-text">
+                            The main aim of this project was to provide 
+                            practical experience in the design of power electronics and control through 
+                            the design, construction, and testing of a two-switch forward converter
+                            based on a given specification. This project was a collaboration between two
+                            other students and myself.</p>
+                    </div>
+
+                    <!--Objectives-->
+                    <div class="text-box project-headings child">
+                        <h2>PROJECT OBJECTIVES</h2>
+                        <p class="justify-center-text">
+                            Based on the overiview above, the prject was divided into several objectives as follows:
+                            <ul>
+                                <li>
+                                    Simulation of Open Loop Converter, Gate Driver & PWM Circuit and the Magnetic Design & PCB Design for converter
+                                </li>
+                                <li>
+                                    Gate drive and PWM circuit construction and testing, populate and test the PCB
+                                </li>
+                                <li>
+                                    Closed Loop Output Voltage Control simulation and construction
+                                </li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+
+                <!--Images-->
+                
+                <div class="project-headings child">
+                    <h2>IMAGES</h2>
+                </div>
+                <div class="box">
+                        <figure class="figure">
+                        <img src="Year 2 Group Project/HardwareBuildofForwardConverter.jpg" alt="HardwareBuildofForwardConverter" style="width:12cm; height: auto;">
+                        <figcaption class="figcaption">Forward Converter Hardware Build</figure>
+
+                        <figure class="figure">
+                        <img src="Year 2 Group Project/PWMGenerationCircuit.png" alt="PWMGenerationCircuit" style="width:12cm; height: auto;">
+                        <figcaption class="figcaption">PWM Generation Circuit</figure>
+                        
+                        <figure class="figure">
+                        <img src="Year 2 Group Project/OpenLoopConfigofCircuit.jpg" alt="OpenLoopConfigofCircuit" style="width:12cm; height: auto;">
+                        <figcaption class="figcaption">Open Loop Circuit Configuration</figure>
+                        
+                        <figure class="figure">
+                        <img src="Year 2 Group Project/ClosedLoopConfigurationofCircuit.jpg" alt="ClosedLoopConfigurationofCircuit" style="width:12cm; height: auto;">
+                        <figcaption class="figcaption">Closed Loop Circuit Configuration</figure>
+        
+
+
+                    
+                </div>
+
+            </section>
+        </body>
+        {% endblock %}
+
+
+        <footer class="main-footer">
+            <div class="container main-footer-container">
+                <ul class="nav footer-nav">
+                    <li>
+                        <a 
+                        href = "https://www.linkedin.com/in/harthiganesh/" target="_blank">
+                        <img src="Images/Linkedin.png">
+                        </a>
+                    </li>
+                        
+                    <li>
+                        <a
+                        href = "https://github.com/h-arthi" target="_blank">
+                        <img src="Images/github.png">
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                        href= mailto:"harthi.ganesh@live.com" target="_blank">
+                        <img src="Images/mail.png">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+    </body>
+</html>
