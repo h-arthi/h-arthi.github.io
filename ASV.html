@@ -11,6 +11,7 @@
                 <ul>
                     <li><a href = "index.html">HOME</a></li>
                     <li><a href = "projects.html">PROJECTS</a></li>
+                     <!--<li><a href = "Internships.html">INTERNSHIPS</a></li>-->
                 </ul>
             </nav>
             <h1 class="title-page">AVALON</h1>
@@ -22,55 +23,45 @@
         <body>
             <section class="content-section container2">
                 <div>
-                    <img class="main-project-pic" src="Year 2 Group Project/Speed Detector and Display.jpg">
+                    <img class="main-project-pic" src="Year 3 Group Project/Avalon.jpg">
                 </div>
                 <!--TO ALIGN THE OBJECTIVES AND COMPONENTS IN THE CENTER-->
                 <div class="parent">
 
                     <!--overview-->
                     <div class="text-box project-headings child">
-                        <h2>OVERVIEW</h2>
+                        <h1>OVERVIEW</h1>
                         <p class="justify-center-text">
-                            The objective of this project was to develop a functional prototype speed detector utilizing HB100 Doppler Radar technology. 
-
-                            By leveraging the Doppler effect, this radar device measures the velocity of moving objects by analyzing the frequency shift 
-                            
-                            between emitted and reflected signals. A display board for this system was also designed.
-                            
-                            This prototype was designed with the aim to accurately calculate the speed of objects based on the measured frequency variations,
-
-                            and was a collaboration between two other students and myself.</p>
+                            The Autonomous Vehicle for Aquatic Landscape Observation and Navigation
+                            <strong>(AVALON)</strong> &mdash; a collaborative effort of 4 students including myself &mdash; aims to provide accessible and reliable freshwater temperature monitoring
+                            solutions through innovative autonomous surface vehicles, empowering communities
+                            to safeguard their freshwater resources and  aquatic life. 
+                           <br><br>
+                            The aim of this project was to design and develop an autonomous vehicle that is capable of 
+                            measuring subsurface water temperatures in freshwater bodies such as rivers and lakes. 
+                        </p>
                     </div>
 
                     <!--Objectives-->
                     <div class="text-box project-headings child">
-                        <h2>PROJECT OBJECTIVES</h2>
+                        <h1>PROJECT OBJECTIVES</h1>
                         <p class="justify-center-text">
-                            Based on the overiview above, the prject was divided into several objectives as follows:
+                            The primary objectives of this project were:
                             <ul>
                                 <li>
-                                    Design, simulate, and build two analogue signal conditioning circuits 
-                                    (bandpass filter + amplifier) for both the ADC system and comparator system
+                                    To build a vehicle with the ability to traverse a waterbody such as a river or a lake to 
+                                    obtain multiple measurements.
                                 </li>
                                 <li>
-                                    Implement data acquisition and signal processing using the STM32 microcontroller
-                                     along with an LCD/button user interface to view the frequency/speed and switch between different calculated units
+                                    To measure temperature with an accuracy of ±0.5°C as data quality is critical.
                                 </li>
                                 <li>
-                                    Implement a complete working prototype for both systems with the final circuit 
-                                    soldered onto a printed circuit board (PCB)
+                                    To take three different measurements, with one at the water surface, one at the surface 
+                                    bed, and one at the half-way point up to a maximum depth of 3m.
                                 </li>
                                 <li>
-                                    Build RS-485 serial transceiver daughter board to transmit and
-                                    receive a UART signal containing the speed of the moving 
-                                    object (encoded in binary coded decimal)
-                                </li>
-                                <li>
-                                    Design and build the required power supplies for the display 
-                                    board using the MAX-882 integrated circuit
-                                </li>
-                                <li>
-                                    CPLD Sofware design and implementation of clock divder, BCD to 7segment decoder, shift register, UART control receiver logic
+                                    To store the temperature data along with the corresponding time, location, and depth. 
+                                    The stored data needs to be retrievable
                                 </li>
                             </ul>
                         </p>
@@ -79,28 +70,42 @@
 
                 <!--Images-->
                 
-                <div class="project-headings child">
-                    <h2>IMAGES</h2>
-                </div>
-                <div class="box">
-                        <figure class="figure">
-                        <img src="Year 2 Group Project/electronic project sem 1.jpg" alt="Protype Doppler Speed System" style="width:12cm; height: auto;">
-                        <figcaption class="figcaption">Protype Doppler Speed System</figure>
-
-                        <figure class="figure">
-                            <img src="Year 2 Group Project/Speed Detector and Display.jpg" alt="Integrated Systema and Display" style="width:12cm; height: auto;">
-                            <figcaption class="figcaption">Integrated Prototype Speed Detector with Display System</figure>
-                    
-                    <figure>
-                        <iframe width="853" height="480" src="https://www.youtube.com/embed/syD6lWlD3UI" 
-                        title="Nott-A-Squad Group Project Demo" frameborder="0" allow="accelerometer; autoplay; 
-                        clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-                        </iframe>
-                        <figcaption class="figcaption">ASV Demo Video
-                    </figure>
-                </div>
+                <div class="text-box project-headings child">
+                    <h1>PROJECT DEMO</h1>
                 
+                    <div class="box">
+                        <figure>
+                            <iframe width="900" height="500" src="https://www.youtube.com/embed/syD6lWlD3UI" 
+                            title="Nott-A-Squad Group Project Demo" frameborder="0" allow="accelerometer; autoplay; 
+                            clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                            </iframe>
+                        </figure>
+                    </div>
+                </div>
+
+                <div class="text-box project-headings child">
+                    <h1>POSTER</h1>
+                
+                    <div class="box">
+                        <figure>
+                            <iframe width="950" height="650" src="Year 3 Group Project/Poster.pdf" frameborder="0"></iframe>
+                        </figure>
+                    </div>
+
+                </div>
+
+                
+                <div class="text-box project-headings child">
+                    <h1>BROCHURE</h1>
+                
+                    <div class="box">
+                        <figure>
+                            <iframe width="950" height="650" src="Year 3 Group Project/AVALON Brochure.pdf" frameborder="0"></iframe>
+                        </figure>
+                    </div>
+                </div>
+
             </section>
         </body>
         {% endblock %}

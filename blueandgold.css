@@ -264,6 +264,14 @@ html,body{
     /*background-color: blanchedalmond;*/
 }
 
+.project-headings h1{
+    font-size: xx-large;
+    font-family: muktaBold;
+    color: navy;
+    display:flex;
+    text-align: center;
+    background-color: #6699CC;
+}
 
 .project-headings li{
     color:  #FFD1DC;
